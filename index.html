@@ -9,12 +9,29 @@
         <style>
             body {
                 font-family: Arial, Helvetica, sans-serif;
+                margin: 0;
                 text-align: center;
             }
-            canvas {
-                left: 50% !important;
-                top: 120px !important;
-                transform: translateX(-50%);
+            main {
+                align-items: center;
+                display: flex;
+                flex-direction: column;
+            }
+            p {
+                margin-top: 0;
+            }
+            #shot-feedback {
+                color: white;
+                font-size: 1.5rem;
+                margin-bottom: 0;
+                padding: 12px;
+                width: 200px;
+            }
+            .pot {
+                background: black;
+            }
+            .foul {
+                background: red;
             }
         </style>
     </head>
@@ -23,7 +40,8 @@
             <h1>Pot Black</h1>
         </header>
         <main>
-            <p>Click the edge of the black where you want to hit it.</p>
+            <p>Aim & click</p>
+            <p id="shot-feedback"></p>
         </main>
         <script src="sketch.js"></script>
     </body>
